@@ -253,8 +253,8 @@ function Education() {
             <div>
               <div className="list-main">{ed.titulo}</div>
               <div className="list-sub">{ed.institucion}</div>
+              <div className="list-note">{ed.periodo}</div>
             </div>
-            <div className="list-meta">{ed.periodo}</div>
           </div>
         ))}
       </div>

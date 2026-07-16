@@ -96,6 +96,7 @@
 .list-main { font-weight: 500; font-size: 0.98rem; }
 .list-sub { color: var(--text-soft); font-size: 0.88rem; margin-top: 2px; }
 .list-meta { color: var(--text-dim); font-size: 0.83rem; white-space: nowrap; font-variant-numeric: tabular-nums; text-align: right; }
+.list-note { color: var(--text-dim); font-size: 0.86rem; margin-top: 4px; }
 .list-right { display: flex; align-items: baseline; gap: 14px; flex-shrink: 0; }
 .list-link { font-size: 0.83rem; color: var(--text-soft); white-space: nowrap; transition: color 0.18s; }
 .list-link:hover { color: var(--accent); }
@@ -104,7 +105,7 @@
 @media (max-width: 560px) {
   .list-row { flex-direction: column; gap: 6px; }
   .list-right { width: 100%; justify-content: space-between; }
-  .list-meta { text-align: left; }
+  .list-meta { text-align: left; white-space: normal; }
 }
 
 .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
