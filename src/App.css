@@ -78,6 +78,13 @@
 .list-link { font-size: 0.83rem; color: var(--text-soft); white-space: nowrap; transition: color 0.18s; }
 .list-link:hover { color: var(--accent); }
 
+/* En pantallas chicas, la fila se apila: título arriba, fecha/enlace abajo */
+@media (max-width: 560px) {
+  .list-row { flex-direction: column; gap: 6px; }
+  .list-right { width: 100%; justify-content: space-between; }
+  .list-meta { text-align: left; }
+}
+
 .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
 @media (max-width: 720px) { .two-col { grid-template-columns: 1fr; gap: 28px; } }
 .mini-title { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-dim); margin-bottom: 14px; }
