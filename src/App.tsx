@@ -55,18 +55,36 @@ function SectionHead({ n, kicker, title, action }: { n: string; kicker: string; 
 }
 
 function Nav({ theme, onToggle }: { theme: string; onToggle: () => void }) {
+  const [open, setOpen] = useState(false)
+  const close = () => setOpen(false)
+  const links = [
+    ['#about', 'Perfil'],
+    ['#experience', 'Experiencia'],
+    ['#projects', 'Proyectos'],
+    ['#skills', 'Stack'],
+    ['#certifications', 'Certificaciones'],
+    ['#contact', 'Contacto'],
+  ]
   return (
     <nav className="nav">
       <div className="container nav-inner">
-        <a href="#top" className="nav-brand">{perfil.nombre}</a>
-        <div className="nav-links">
-          <a className="navlink" href="#about">Perfil</a>
-          <a className="navlink" href="#experience">Experiencia</a>
-          <a className="navlink" href="#projects">Proyectos</a>
-          <a className="navlink" href="#skills">Stack</a>
-          <a className="navlink" href="#contact">Contacto</a>
+        <a href="#top" className="nav-brand" onClick={close}>{perfil.nombre}</a>
+        <div className="nav-right">
+          <div className={`nav-links ${open ? 'open' : ''}`}>
+            {links.map(([href, label]) => (
+              <a key={href} href={href} onClick={close}>{label}</a>
+            ))}
+          </div>
           <button className="theme-toggle" onClick={onToggle} aria-label="Cambiar tema">
             {theme === 'dark' ? '○' : '●'}
+          </button>
+          <button
+            className="nav-burger"
+            onClick={() => setOpen((o) => !o)}
+            aria-label="Abrir menú"
+            aria-expanded={open}
+          >
+            {open ? '✕' : '☰'}
           </button>
         </div>
       </div>
