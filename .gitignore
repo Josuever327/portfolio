@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Archivos personales que NO deben publicarse (quedaron dentro de la carpeta por error)
+CV_Josue_Vera/
+certificados/
