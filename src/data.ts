@@ -11,7 +11,7 @@ export const perfil = {
   nombre: 'Josué Vera',
   iniciales: 'JV',
   fotoUrl: 'foto.jpg',          // archivo en public/ (o URL http completa)
-  cvUrl: 'CV_Josue_Vera.pdf',   // archivo en public/
+  // El CV depende del idioma -> ver content.es.cvUrl / content.en.cvUrl
 }
 
 export const contacto = {
@@ -46,6 +46,7 @@ interface Content {
   rol: string
   ubicacion: string
   disponibilidad: string
+  cvUrl: string
   resumen: string
   sobreMi: string[]
   skills: Skill[]
@@ -74,6 +75,7 @@ export const content: Record<Lang, Content> = {
     rol: 'Analista de Sistemas · Desarrollador de Software .NET & Web',
     ubicacion: 'Asunción, Paraguay',
     disponibilidad: 'Funcionario privado · Abierto a freelance',
+    cvUrl: 'CV_Josue_Vera.pdf',
     resumen:
       'Desarrollador de software con más de 3 años de experiencia construyendo APIs y ' +
       'sistemas de punta a punta. Sólido en backend con .NET y con experiencia en frontend, ' +
@@ -202,6 +204,7 @@ export const content: Record<Lang, Content> = {
     rol: 'Systems Analyst · Software Developer .NET & Web',
     ubicacion: 'Asunción, Paraguay',
     disponibilidad: 'Full-time employed · Open to freelance',
+    cvUrl: 'CV_Josue_Vera_EN.pdf',
     resumen:
       'Software developer with 3+ years of experience building APIs and end-to-end systems. ' +
       'Strong in backend with .NET and experienced in frontend, currently growing as a ' +

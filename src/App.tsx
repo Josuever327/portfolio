@@ -11,7 +11,6 @@ const waUrl = `https://wa.me/${contacto.whatsapp}` +
 const withBase = (file: string) =>
   file.startsWith('http') ? file : import.meta.env.BASE_URL + file
 const fotoSrc = perfil.fotoUrl ? withBase(perfil.fotoUrl) : ''
-const cvSrc = perfil.cvUrl ? withBase(perfil.cvUrl) : ''
 
 export default function App() {
   const [theme, setTheme] = useState<'dark' | 'light'>('light')
@@ -110,6 +109,7 @@ function Nav({ t, theme, lang, onToggleTheme, onToggleLang }: {
 
 function Hero({ t }: { t: T }) {
   const { linkedin, github } = contacto
+  const cvSrc = t.cvUrl ? withBase(t.cvUrl) : ''
   return (
     <header id="top" className="hero">
       <div className="container">
@@ -282,6 +282,7 @@ function Education({ t }: { t: T }) {
 
 function Contact({ t }: { t: T }) {
   const { linkedin, github } = contacto
+  const cvSrc = t.cvUrl ? withBase(t.cvUrl) : ''
   return (
     <section id="contact" className="section">
       <div className="container">
