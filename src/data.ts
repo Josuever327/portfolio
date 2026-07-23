@@ -72,31 +72,34 @@ const certLinks = {
 export const content: Record<Lang, Content> = {
   // ======================= ESPAÑOL =======================
   es: {
-    rol: 'Analista de Sistemas · Desarrollador de Software .NET & Web',
+    rol: 'Desarrollador Backend .NET | Analista de Sistemas',
     ubicacion: 'Asunción, Paraguay',
     disponibilidad: 'Funcionario privado · Abierto a freelance',
     cvUrl: 'CV_Josue_Vera.pdf',
     resumen:
-      'Desarrollador de software con más de 3 años de experiencia construyendo APIs y ' +
-      'sistemas de punta a punta. Sólido en backend con .NET y con experiencia en frontend, ' +
-      'hoy creciendo como desarrollador semi-senior y orientándome al liderazgo técnico.',
+      'Desarrollador Backend especializado en .NET, con más de 3 años construyendo APIs y ' +
+      'sistemas escalables de punta a punta. Hoy coordino tareas técnicas y crezco hacia un rol ' +
+      'de mayor liderazgo técnico, sin dejar de programar todos los días.',
     sobreMi: [
-      'Soy Analista de Sistemas y desarrollador de software con más de 3 años de experiencia ' +
-        'profesional. Actualmente me desempeño como Sublíder de Proyecto en el sector bancario, ' +
-        'donde además de desarrollar coordino tareas técnicas, realizo code reviews y participo ' +
-        'en decisiones de arquitectura orientadas a escalabilidad y calidad.',
-      'Mi base es el backend con .NET, pero no me encierro en un solo lado: también trabajo con ' +
-        'frontend (React, Vue), llevo adelante proyectos personales para seguir aprendiendo y ' +
-        'complementé mi formación con cursos de frontend, arquitectura y buenas prácticas. Me estoy ' +
-        'consolidando como desarrollador semi-senior mientras avanzo hacia un rol de Tech Lead.',
+      'Soy Analista de Sistemas y desarrollador especializado en .NET, con más de 3 años de ' +
+        'experiencia profesional en el diseño, implementación y evolución de APIs REST. ' +
+        'Actualmente me desempeño como Sublíder de Proyecto en el sector bancario, donde además ' +
+        'de desarrollar coordino tareas técnicas, lidero revisiones de código, participo en ' +
+        'decisiones de arquitectura y acompaño a otros desarrolladores del equipo.',
+      'Mi especialidad es el desarrollo de sistemas escalables y soluciones distribuidas sobre ' +
+        '.NET, pero también trabajo con frontend y mobile (React, React Native, Vue). Llevo ' +
+        'adelante proyectos personales de punta a punta para seguir aprendiendo, complementé mi ' +
+        'formación con cursos de arquitectura y buenas prácticas, y me estoy consolidando como ' +
+        'desarrollador semi-senior con la mira puesta en crecer hacia mayor liderazgo técnico.',
       'Trabajo de forma estable en el ámbito privado, pero también estoy abierto a proyectos ' +
-        'freelance donde pueda aportar soluciones sólidas y bien construidas de principio a fin.',
+        'freelance donde pueda aportar soluciones robustas, escalables y mantenibles de principio ' +
+        'a fin.',
     ],
     skills: [
-      { categoria: 'Backend & APIs', items: ['.NET 8 / 9 / 10', '.NET Framework', 'APIs REST', 'Arquitectura Limpia', 'DDD', 'Migraciones .NET'] },
-      { categoria: 'Frontend', items: ['React', 'Vue', 'TypeScript', 'HTML / CSS'] },
+      { categoria: 'Backend & APIs', items: ['.NET 8 / 9 / 10', '.NET Framework', 'APIs REST', 'Minimal APIs', 'Arquitectura Limpia', 'DDD', 'EF Core', 'FluentValidation', 'Serilog', 'Migraciones .NET'] },
+      { categoria: 'Frontend & Mobile', items: ['React', 'Vue', 'React Native', 'Expo', 'TypeScript', 'HTML / CSS'] },
       { categoria: 'Cloud & DevOps', items: ['Microsoft Azure', 'Azure DevOps', 'Azure APIM', 'Docker', 'Kubernetes', 'CI/CD'] },
-      { categoria: 'Bases de datos', items: ['PostgreSQL', 'MySQL', 'Oracle / PL-SQL'] },
+      { categoria: 'Bases de datos', items: ['PostgreSQL', 'MySQL', 'Oracle / PL-SQL', 'SQLite'] },
       { categoria: 'Prácticas', items: ['Code Review', 'Clean Code', 'SOLID', 'Liderazgo técnico'] },
       { categoria: 'Herramientas', items: ['Git', 'GitHub', 'GitLab', 'Postman', 'Draw.io'] },
     ],
@@ -106,13 +109,13 @@ export const content: Record<Lang, Content> = {
         empresa: 'Banco Continental SAECA — Centro Logístico de Tecnología S.A. (CLT)',
         periodo: '03/2025 — Actualidad',
         detalles: [
-          'Desarrollo de soluciones backend para el sistema del área de tarjetas del Banco Continental.',
-          'Coordinación de tareas técnicas y funcionales; revisión de código y acompañamiento a desarrolladores.',
-          'Desarrollo y mantenimiento de APIs REST en .NET y migraciones de servicios a .NET 9 / 10.',
-          'Optimización de consultas SQL y validaciones técnicas previas a despliegue.',
-          'Análisis de requerimientos y definición de soluciones técnicas orientadas a escalabilidad.',
-          'Control de versiones con Azure DevOps (Git, ramas, seguimiento de cambios).',
-          'Administración de Azure API Management (APIM): publicación, versionado y ciclo de vida de APIs.',
+          'Diseñé e implementé APIs REST en .NET para el sistema de tarjetas del Banco Continental, una plataforma crítica del negocio bancario.',
+          'Coordino tareas técnicas y funcionales, lidero revisiones de código y acompaño a otros desarrolladores del equipo.',
+          'Participo en decisiones de arquitectura orientadas a escalabilidad, mantenibilidad y calidad del sistema.',
+          'Migré servicios a .NET 9 y .NET 10, mejorando rendimiento y mantenibilidad.',
+          'Mantengo el ciclo de vida de APIs en Azure API Management: publicación, versionado y gobierno.',
+          'Optimicé consultas SQL y definí validaciones técnicas previas a cada despliegue.',
+          'Colaboro en la planificación técnica y el análisis de requerimientos, gestionando repositorios, ramas y el ciclo de integración en Azure DevOps.',
         ],
       },
       {
@@ -120,34 +123,44 @@ export const content: Record<Lang, Content> = {
         empresa: 'CITech',
         periodo: '06/2022 — 02/2025',
         detalles: [
-          'Soporte técnico directo a clientes y resolución de incidencias.',
-          'Análisis y levantamiento de requerimientos técnicos y funcionales.',
-          'Desarrollo de aplicaciones de escritorio y APIs REST en .NET con Arquitectura Limpia.',
+          'Brindé soporte técnico directo a clientes y resolví incidencias de producción.',
+          'Relevé y analicé requerimientos técnicos y funcionales junto a clientes.',
+          'Desarrollé aplicaciones de escritorio y APIs REST en .NET aplicando Clean Architecture.',
         ],
       },
     ],
     proyectos: [
       {
-        nombre: 'API Ecommerce / Punto de Venta',
+        nombre: 'Ecommerce / Punto de Venta (API + App)',
         descripcion:
-          'Proyecto personal: sistema de ecommerce y POS adaptable a distintos rubros, con módulos ' +
-          'de productos, familias, stock, compras, ventas, caja y facturación. Arquitectura modular ' +
-          'por capas y autenticación JWT basada en permisos.',
-        tecnologias: ['.NET 10', 'PostgreSQL', 'EF Core', 'React Native', 'JWT'],
+          'Proyecto personal full-stack: sistema de ecommerce y POS adaptable a distintos rubros y ' +
+          'multi-sucursal, diseñado con una arquitectura modular y orientada al dominio, pensada ' +
+          'para la escalabilidad y la mantenibilidad: Clean Architecture en capas (Api, ' +
+          'Application, Domain, Infrastructure) con organización por dominio (productos, ' +
+          'familias/atributos, stock, compras, ventas, caja, facturación). Backend en .NET 10 con ' +
+          'Minimal APIs, EF Core + PostgreSQL, autenticación JWT con refresh tokens y autorización ' +
+          'por permisos, containerizado con Docker. App móvil en React Native (Expo) con paneles ' +
+          'diferenciados para cliente y administración, consumiendo la API en vivo.',
+        tecnologias: ['.NET 10', 'Clean Architecture', 'PostgreSQL', 'EF Core', 'React Native', 'Expo', 'JWT', 'Docker'],
       },
       {
-        nombre: 'Backend — Sector bancario (tarjetas)',
+        nombre: 'AlarmasPro — investigación de alarmas nativas',
         descripcion:
-          'APIs REST y servicios para el sistema de tarjetas del Banco Continental, con gestión del ' +
-          'ciclo de vida de APIs en Azure APIM, migraciones a .NET 9 / 10 y despliegue con Azure DevOps.',
-        tecnologias: ['.NET 9 / 10', 'Azure APIM', 'Azure DevOps', 'SQL'],
+          'Proyecto de prueba y aprendizaje: diseñé e implementé un motor de alarmas nativo con ' +
+          'Notifee (canal de alarma, full-screen intent, exact alarms) para una app Android/iOS que ' +
+          'suena de verdad, ignorando el modo silencio, con pantalla completa sobre el bloqueo, ' +
+          'corriendo sobre development build sin depender de Expo Go. Publicado en GitHub.',
+        tecnologias: ['React Native', 'Expo', 'Notifee', 'EAS Build', 'SQLite'],
+        repo: 'https://github.com/Josuever327/AlarmasPro',
       },
       {
-        nombre: 'Aplicaciones con Arquitectura Limpia',
+        nombre: 'MotorCheck',
         descripcion:
-          'Aplicaciones de escritorio y APIs REST construidas con .NET aplicando Clean Architecture, ' +
-          'principios SOLID y buenas prácticas de código.',
-        tecnologias: ['.NET', 'Clean Architecture', 'SOLID'],
+          'Proyecto de aficionado, con intención de aportar a la comunidad: implementé una app ' +
+          'para llevar el mantenimiento de vehículos (motos, autos, camionetas) con reglas de service ' +
+          'configurables por kilometraje y tiempo, historial de mantenimientos y alertas de próximos ' +
+          'vencimientos, con almacenamiento local en SQLite.',
+        tecnologias: ['React Native', 'Expo', 'SQLite', 'TypeScript'],
       },
     ],
     certificaciones: [
@@ -201,31 +214,32 @@ export const content: Record<Lang, Content> = {
 
   // ======================= ENGLISH =======================
   en: {
-    rol: 'Systems Analyst · Software Developer .NET & Web',
+    rol: 'Backend .NET Developer | Systems Analyst',
     ubicacion: 'Asunción, Paraguay',
     disponibilidad: 'Full-time employed · Open to freelance',
     cvUrl: 'CV_Josue_Vera_EN.pdf',
     resumen:
-      'Software developer with 3+ years of experience building APIs and end-to-end systems. ' +
-      'Strong in backend with .NET and experienced in frontend, currently growing as a ' +
-      'semi-senior developer and moving toward technical leadership.',
+      'Backend Developer specialized in .NET, with 3+ years building APIs and scalable end-to-end ' +
+      'systems. Today I coordinate technical tasks and I’m growing toward greater technical ' +
+      'leadership — without stepping away from hands-on development.',
     sobreMi: [
-      'I am a Systems Analyst and software developer with over 3 years of professional experience. ' +
-        'I currently work as a Project Co-Lead in the banking sector, where — besides developing — I ' +
-        'coordinate technical tasks, perform code reviews and take part in architecture decisions ' +
-        'focused on scalability and quality.',
-      'My core is backend with .NET, but I don’t box myself into a single side: I also work with ' +
-        'frontend (React, Vue), build personal projects to keep learning, and complemented my ' +
-        'training with courses on frontend, architecture and best practices. I’m consolidating as a ' +
-        'semi-senior developer while moving toward a Tech Lead role.',
+      'I’m a Systems Analyst and .NET developer with over 3 years of professional experience in ' +
+        'the design, implementation, and evolution of REST APIs. I currently work as a Project ' +
+        'Co-Lead in the banking sector, where — besides developing — I coordinate technical tasks, ' +
+        'lead code reviews, participate in architecture decisions, and mentor developers on the team.',
+      'My specialty is the development of scalable systems and distributed solutions on .NET, ' +
+        'but I also work with frontend and mobile (React, React Native, Vue). I build personal ' +
+        'projects end-to-end to keep learning, complemented my training with courses on ' +
+        'architecture and best practices, and I’m consolidating as a semi-senior developer with ' +
+        'an eye toward growing into greater technical leadership.',
       'I hold a stable full-time position in the private sector, but I’m also open to freelance ' +
-        'projects where I can deliver solid, well-built solutions from end to end.',
+        'projects where I can deliver robust, scalable, and maintainable solutions from end to end.',
     ],
     skills: [
-      { categoria: 'Backend & APIs', items: ['.NET 8 / 9 / 10', '.NET Framework', 'REST APIs', 'Clean Architecture', 'DDD', '.NET Migrations'] },
-      { categoria: 'Frontend', items: ['React', 'Vue', 'TypeScript', 'HTML / CSS'] },
+      { categoria: 'Backend & APIs', items: ['.NET 8 / 9 / 10', '.NET Framework', 'REST APIs', 'Minimal APIs', 'Clean Architecture', 'DDD', 'EF Core', 'FluentValidation', 'Serilog', '.NET Migrations'] },
+      { categoria: 'Frontend & Mobile', items: ['React', 'Vue', 'React Native', 'Expo', 'TypeScript', 'HTML / CSS'] },
       { categoria: 'Cloud & DevOps', items: ['Microsoft Azure', 'Azure DevOps', 'Azure APIM', 'Docker', 'Kubernetes', 'CI/CD'] },
-      { categoria: 'Databases', items: ['PostgreSQL', 'MySQL', 'Oracle / PL-SQL'] },
+      { categoria: 'Databases', items: ['PostgreSQL', 'MySQL', 'Oracle / PL-SQL', 'SQLite'] },
       { categoria: 'Practices', items: ['Code Review', 'Clean Code', 'SOLID', 'Technical Leadership'] },
       { categoria: 'Tools', items: ['Git', 'GitHub', 'GitLab', 'Postman', 'Draw.io'] },
     ],
@@ -235,13 +249,13 @@ export const content: Record<Lang, Content> = {
         empresa: 'Banco Continental SAECA — Centro Logístico de Tecnología S.A. (CLT)',
         periodo: 'Mar 2025 — Present',
         detalles: [
-          'Development of backend solutions for the cards area system of Banco Continental.',
-          'Coordination of technical and functional tasks; code reviews and developer mentoring.',
-          'Development and maintenance of REST APIs in .NET and service migrations to .NET 9 / 10.',
-          'Optimization of SQL queries and technical validations prior to deployment.',
-          'Requirements analysis and definition of technical solutions focused on scalability.',
-          'Version control with Azure DevOps (Git, branching, change tracking).',
-          'Management of Azure API Management (APIM): publishing, versioning and API lifecycle.',
+          'Designed and implemented REST APIs in .NET for Banco Continental’s cards system, a critical platform for the bank’s core business.',
+          'Coordinate technical and functional tasks, lead code reviews, and mentor developers on the team.',
+          'Participate in architecture decisions focused on scalability, maintainability, and system quality.',
+          'Migrated services to .NET 9 and .NET 10, improving performance and maintainability.',
+          'Maintain the API lifecycle in Azure API Management: publishing, versioning, and governance.',
+          'Optimized SQL queries and defined technical validations prior to each deployment.',
+          'Collaborate on technical planning and requirements analysis, managing repositories, branching, and the integration workflow in Azure DevOps.',
         ],
       },
       {
@@ -249,34 +263,44 @@ export const content: Record<Lang, Content> = {
         empresa: 'CITech',
         periodo: 'Jun 2022 — Feb 2025',
         detalles: [
-          'Direct technical support to clients and incident resolution.',
-          'Analysis and gathering of technical and functional requirements.',
-          'Development of desktop applications and REST APIs in .NET with Clean Architecture.',
+          'Provided direct technical support to clients and resolved production incidents.',
+          'Gathered and analyzed technical and functional requirements with clients.',
+          'Developed desktop applications and REST APIs in .NET applying Clean Architecture.',
         ],
       },
     ],
     proyectos: [
       {
-        nombre: 'Ecommerce / Point of Sale API',
+        nombre: 'Ecommerce / Point of Sale (API + App)',
         descripcion:
-          'Personal project: an ecommerce and POS system adaptable to different businesses, with ' +
-          'modules for products, categories, stock, purchases, sales, cash register and invoicing. ' +
-          'Layered modular architecture and permission-based JWT authentication.',
-        tecnologias: ['.NET 10', 'PostgreSQL', 'EF Core', 'React Native', 'JWT'],
+          'Personal full-stack project: an ecommerce and POS system adaptable to different businesses ' +
+          'and multiple branches, designed with a modular, domain-oriented architecture built for ' +
+          'scalability and maintainability: layered Clean Architecture (Api, Application, Domain, ' +
+          'Infrastructure) organized by domain (products, categories/attributes, stock, purchases, ' +
+          'sales, cash register, invoicing). Backend in .NET 10 with Minimal APIs, EF Core + ' +
+          'PostgreSQL, JWT authentication with refresh tokens and permission-based authorization, ' +
+          'containerized with Docker. Mobile app in React Native (Expo) with separate client and ' +
+          'admin panels, consuming the API live.',
+        tecnologias: ['.NET 10', 'Clean Architecture', 'PostgreSQL', 'EF Core', 'React Native', 'Expo', 'JWT', 'Docker'],
       },
       {
-        nombre: 'Backend — Banking sector (cards)',
+        nombre: 'AlarmasPro — native alarms research',
         descripcion:
-          'REST APIs and services for the cards system of Banco Continental, with API lifecycle ' +
-          'management in Azure APIM, migrations to .NET 9 / 10 and deployment through Azure DevOps.',
-        tecnologias: ['.NET 9 / 10', 'Azure APIM', 'Azure DevOps', 'SQL'],
+          'Test and learning project: designed and implemented a native alarm engine with Notifee ' +
+          '(alarm channel, full-screen intent, exact alarms) for an Android/iOS app that truly rings ' +
+          '— ignoring silent mode, with a full-screen wake-up over the lock screen — running on a ' +
+          'development build without relying on Expo Go. Published on GitHub.',
+        tecnologias: ['React Native', 'Expo', 'Notifee', 'EAS Build', 'SQLite'],
+        repo: 'https://github.com/Josuever327/AlarmasPro',
       },
       {
-        nombre: 'Applications with Clean Architecture',
+        nombre: 'MotorCheck',
         descripcion:
-          'Desktop applications and REST APIs built with .NET applying Clean Architecture, SOLID ' +
-          'principles and coding best practices.',
-        tecnologias: ['.NET', 'Clean Architecture', 'SOLID'],
+          'Hobby project, built with the intention of giving back to the community: a vehicle ' +
+          'maintenance tracker (motorcycles, cars, trucks) with configurable service rules by ' +
+          'mileage and time, maintenance history, and upcoming due-date alerts, backed by local ' +
+          'SQLite storage.',
+        tecnologias: ['React Native', 'Expo', 'SQLite', 'TypeScript'],
       },
     ],
     certificaciones: [
